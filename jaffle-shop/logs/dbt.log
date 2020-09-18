@@ -1,0 +1,142 @@
+2020-09-18 20:40:46.149152 (MainThread): Running with dbt=0.18.0
+2020-09-18 20:40:46.706870 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\guxie\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-09-18 20:40:46.708877 (MainThread): Tracking: tracking
+2020-09-18 20:40:46.709872 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x04E3BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05B00190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05B00250>]}
+2020-09-18 20:40:46.744869 (MainThread): Partial parsing not enabled
+2020-09-18 20:40:46.746870 (MainThread): Parsing macros\adapters.sql
+2020-09-18 20:40:46.778868 (MainThread): Parsing macros\catalog.sql
+2020-09-18 20:40:46.788870 (MainThread): Parsing macros\etc.sql
+2020-09-18 20:40:46.790870 (MainThread): Parsing macros\materializations\copy.sql
+2020-09-18 20:40:46.799871 (MainThread): Parsing macros\materializations\incremental.sql
+2020-09-18 20:40:46.822869 (MainThread): Parsing macros\materializations\seed.sql
+2020-09-18 20:40:46.827870 (MainThread): Parsing macros\materializations\snapshot.sql
+2020-09-18 20:40:46.830869 (MainThread): Parsing macros\materializations\table.sql
+2020-09-18 20:40:46.848870 (MainThread): Parsing macros\materializations\view.sql
+2020-09-18 20:40:46.858869 (MainThread): Parsing macros\core.sql
+2020-09-18 20:40:46.865869 (MainThread): Parsing macros\adapters\common.sql
+2020-09-18 20:40:46.935869 (MainThread): Parsing macros\etc\datetime.sql
+2020-09-18 20:40:46.950869 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-09-18 20:40:46.952869 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-09-18 20:40:46.955869 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-09-18 20:40:46.958869 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-09-18 20:40:46.961869 (MainThread): Parsing macros\etc\query.sql
+2020-09-18 20:40:46.963874 (MainThread): Parsing macros\materializations\helpers.sql
+2020-09-18 20:40:46.978869 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-09-18 20:40:47.002869 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-09-18 20:40:47.005870 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-09-18 20:40:47.016876 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-09-18 20:40:47.052870 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-09-18 20:40:47.099868 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-09-18 20:40:47.102869 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-09-18 20:40:47.131869 (MainThread): Parsing macros\materializations\table\table.sql
+2020-09-18 20:40:47.143873 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-09-18 20:40:47.152870 (MainThread): Parsing macros\materializations\view\view.sql
+2020-09-18 20:40:47.163872 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-09-18 20:40:47.168871 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-09-18 20:40:47.171872 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-09-18 20:40:47.174869 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-09-18 20:40:47.186871 (MainThread): Partial parsing not enabled
+2020-09-18 20:40:47.252869 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model".
+2020-09-18 20:40:47.288869 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model".
+2020-09-18 20:40:47.694839 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2020-09-18 20:40:47.696841 (MainThread): 
+2020-09-18 20:40:47.696841 (MainThread): Acquiring new bigquery connection "master".
+2020-09-18 20:40:47.701836 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_guxie-286214".
+2020-09-18 20:40:47.701836 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-09-18 20:40:47.983360 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_guxie-286214_dbt_gu".
+2020-09-18 20:40:47.983360 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_guxie-286214_dbt_gu".
+2020-09-18 20:40:47.984359 (ThreadPoolExecutor-0_0): Creating schema "guxie-286214.dbt_gu".
+2020-09-18 20:40:47.984359 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2020-09-18 20:40:47.984359 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-18 20:40:48.498388 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_guxie-286214_dbt_gu".
+2020-09-18 20:40:48.499386 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-09-18 20:40:48.499386 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-18 20:40:48.901384 (MainThread): 15:40:48 | Concurrency: 1 threads (target='dev')
+2020-09-18 20:40:48.902384 (MainThread): 15:40:48 | 
+2020-09-18 20:40:48.905385 (MainThread): unclosed <socket.socket fd=1032, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.86.32', 59378), raddr=('172.217.12.74', 443)>
+2020-09-18 20:40:48.906385 (MainThread): unclosed <socket.socket fd=1044, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.86.32', 59379), raddr=('216.58.194.138', 443)>
+2020-09-18 20:40:48.924387 (Thread-1): Began running node model.jaffle_shop.my_first_dbt_model
+2020-09-18 20:40:48.926384 (Thread-1): 15:40:48 | 1 of 2 START table model dbt_gu.my_first_dbt_model................... [RUN]
+2020-09-18 20:40:48.927386 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model".
+2020-09-18 20:40:48.927386 (Thread-1): Compiling model.jaffle_shop.my_first_dbt_model
+2020-09-18 20:40:48.960386 (Thread-1): Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+2020-09-18 20:40:48.964386 (Thread-1): finished collecting timing info
+2020-09-18 20:40:49.038384 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.my_first_dbt_model"
+2020-09-18 20:40:49.041386 (Thread-1): Opening a new connection, currently in state init
+2020-09-18 20:40:49.041386 (Thread-1): On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+
+  create or replace table `guxie-286214`.`dbt_gu`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-09-18 20:40:51.182967 (Thread-1): finished collecting timing info
+2020-09-18 20:40:51.183966 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd50df682-f76a-4ca6-884c-11cd2c0dbaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05D61E50>]}
+2020-09-18 20:40:51.185967 (Thread-1): 15:40:51 | 1 of 2 OK created table model dbt_gu.my_first_dbt_model.............. [CREATE TABLE (2.0 rows, 0.0 Bytes processed) in 2.26s]
+2020-09-18 20:40:51.186967 (Thread-1): Finished running node model.jaffle_shop.my_first_dbt_model
+2020-09-18 20:40:51.186967 (Thread-1): Began running node model.jaffle_shop.my_second_dbt_model
+2020-09-18 20:40:51.188966 (Thread-1): 15:40:51 | 2 of 2 START view model dbt_gu.my_second_dbt_model................... [RUN]
+2020-09-18 20:40:51.196967 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model".
+2020-09-18 20:40:51.196967 (Thread-1): Compiling model.jaffle_shop.my_second_dbt_model
+2020-09-18 20:40:51.209982 (Thread-1): Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+2020-09-18 20:40:51.211970 (Thread-1): finished collecting timing info
+2020-09-18 20:40:51.242981 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.my_second_dbt_model"
+2020-09-18 20:40:51.243966 (Thread-1): Opening a new connection, currently in state closed
+2020-09-18 20:40:51.244968 (Thread-1): On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+
+
+  create or replace view `guxie-286214`.`dbt_gu`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `guxie-286214`.`dbt_gu`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-09-18 20:40:52.301464 (Thread-1): finished collecting timing info
+2020-09-18 20:40:52.302462 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd50df682-f76a-4ca6-884c-11cd2c0dbaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05C32268>]}
+2020-09-18 20:40:52.304465 (Thread-1): 15:40:52 | 2 of 2 OK created view model dbt_gu.my_second_dbt_model.............. [CREATE VIEW in 1.11s]
+2020-09-18 20:40:52.305463 (Thread-1): Finished running node model.jaffle_shop.my_second_dbt_model
+2020-09-18 20:40:52.306464 (MainThread): Acquiring new bigquery connection "master".
+2020-09-18 20:40:52.307464 (MainThread): 15:40:52 | 
+2020-09-18 20:40:52.310462 (MainThread): 15:40:52 | Finished running 1 table model, 1 view model in 4.61s.
+2020-09-18 20:40:52.310462 (MainThread): Connection 'master' was properly closed.
+2020-09-18 20:40:52.310462 (MainThread): Connection 'create_guxie-286214_dbt_gu' was properly closed.
+2020-09-18 20:40:52.310462 (MainThread): Connection 'list_guxie-286214_dbt_gu' was properly closed.
+2020-09-18 20:40:52.310462 (MainThread): Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+2020-09-18 20:40:52.321465 (MainThread): 
+2020-09-18 20:40:52.329463 (MainThread): Completed successfully
+2020-09-18 20:40:52.330462 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2020-09-18 20:40:52.330462 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05CD55F8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05D619A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x05D61778>]}
+2020-09-18 20:40:52.331463 (MainThread): Flushing usage events
